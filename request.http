@@ -1,0 +1,56 @@
+GET http://localhost:1308/user-api/getusers
+
+###
+
+GET  http://localhost:1308/user-api/getuser/1
+###
+
+GET http://localhost:1308/user-api/login
+Content-Type: application/json
+
+{
+    "username":"sai",
+    "password":"sai"
+}
+
+###
+POST  http://localhost:1308/user-api/create-user
+Content-Type: application/json
+
+{
+    "username":"sai",
+    "password":"sai",
+    "email":"sat@gmail.com"
+    
+}
+###
+DELETE http://localhost:1308/user-api/remove-user/1
+
+# porducts components
+
+###
+
+GET http://localhost:1308/product-api/getproducts
+###
+GET http://localhost:1308/product-api/getproduct/12
+###
+POST http://localhost:1308/product-api/create-product
+Content-Type: application/json
+
+{
+    "id":12,
+    "name":"kvv"
+}
+###
+
+PUT http://localhost:1308/product-api/update-product
+Content-Type: application/json
+
+{
+    "id":12,
+    "name":"remo"
+
+}
+
+###
+DELETE http://localhost:1308/product-api/remove-product/12
